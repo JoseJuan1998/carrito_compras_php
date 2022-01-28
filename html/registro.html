@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Violetas - Registro</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="../img/image/png" href="../img/favicon.png" />
+  </head>
+  <body>
+    <form id="frm" name="frm" action="../php/validar_guardar.php" method = "post">
+      <table>
+        <tr>
+          <td>Usuario</td><td><input type="text" name="usuario" id="usuario"/></td><td><p id="useralert" class="oculto">El usuario debe contener solo letras y numeros</p></td>
+        </tr>
+        <tr>
+          <td>Password</td><td><input type="password" name="password" id="password"/></td><td><p id="passalert" class="oculto">La contraseña debe ser de almenos 8 caractéres</p></td>
+        </tr>
+        <tr>
+          <td>Nombre Completo</td><td><input type="text" name="nombre" id="nombre"/></td><td><p id="namealert" class="oculto">El nombre debe ser completo y contener solo letras</p></td>
+        </tr>
+        <tr>
+          <td>CURP</td><td><input type="text" name="curp" id="curp"/></td><td><p id="curpalert" class="oculto">El CURP no es válido</p></td>
+        </tr>
+        <tr>
+          <td>RFC</td><td><input type="text" name="rfc" id="rfc"/></td><td><p id="rfcalert" class="oculto">El RFC no es válido</p></td>
+        </tr>
+        <tr>
+          <td>Dirección</td><td><input type="text" name="direccion" id="direccion"/></td><td><p id="diralert" class="oculto">No es una dirección válida</p></td>
+        </tr>
+        <tr>
+          <td>Correo electrónico</td><td><input type="text" name="correo" id="correo"/></td><td><p id="correoalert" class="oculto">El correo electrónico no es válido</p></td>
+        </tr>
+        <tr>
+          <td></td><td><input type="submit" id="enviar" value="Enviar"/></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+  <script src="../js/script_reg.js" charset="utf-8"></script>
+</html>
