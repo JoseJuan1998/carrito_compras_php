@@ -1,0 +1,15 @@
+.correcto{
+  border: 1px solid green;
+}
+
+.incorrecto{
+  border: 1px solid red;
+}
+
+.oculto{
+  display: none;
+}
+
+.activo{
+  display: block;
+}
